@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Мой лендинг</title>
+<title>Типография</title>
+<link rel="stylesheet" href="style.css">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMTGFW9MHW"></script>
@@ -27,48 +28,141 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/107062207" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-.section {
-    padding: 60px 20px;
-}
-.button {
-    background: black;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
-}
-</style>
 </head>
 
 <body>
 
-<div class="section">
-<h1>Ваш продукт</h1>
-<p>Краткое описание предложения</p>
-<a href="#contact" class="button">Оставить заявку</a>
-</div>
+<!-- ===== ШАПКА ===== -->
+<header>
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+</header>
 
-<div class="section" style="background:#f2f2f2;">
-<h2>Почему выбирают нас</h2>
-<p>Преимущество 1</p>
-<p>Преимущество 2</p>
-<p>Преимущество 3</p>
-</div>
+<!-- ===== ГЛАВНЫЙ ЭКРАН ===== -->
+<section id="home">
+    <h1>Типография МАТРИЦА</h1>
+    <p>Печать визиток, листовок, баннеров и полиграфии любого формата</p>
+    <a href="thanks.html">
+        <button>Заказать расчёт</button>
+    </a>
+</section>
 
-<div class="section" id="contact">
-<h2>Свяжитесь с нами</h2>
-<p>Телефон: +7 900 000 00 00</p>
-<a href="thanks.html" class="button">Отправить</a>
-</div>
+<!-- ===== УСЛУГИ ===== -->
+<section id="services">
+    <div class="container">
+        <h2>Наши услуги</h2>
+
+        <div class="grid">
+            <div class="card">
+                <img src="images/service1.jpg" alt="Услуга 1">
+                <h3>Визитки</h3>
+                <p>Односторонние и двусторонние, дизайнерская бумага.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/service2.jpg" alt="Услуга 2">
+                <h3>Листовки</h3>
+                <p>Любые тиражи, яркая полноцветная печать.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/service3.jpg" alt="Услуга 3">
+                <h3>Баннеры</h3>
+                <p>Широкоформатная печать для улицы и помещений.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ПОРТФОЛИО ===== -->
+<section id="portfolio">
+     <div class="container">
+        <h2>Наши работы</h2>
+        <p>Более 500 выполненных заказов для бизнеса.</p>
+
+        <div class="grid">
+            <div class="card">
+                <img src="images/portfolio1.jpg" alt="Портфолио 1">
+                <h3>Печать для ресторанов</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/portfolio2.jpg" alt="Портфолио 2">
+                <h3>Полиграфия для мероприятий</h3>
+            </div>
+
+            <div class="card">
+                <img src="images/portfolio3.jpg" alt="Портфолио 3">
+                <h3>Брендированная продукция</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== ПРЕИМУЩЕСТВА ===== -->
+<section id="advantages">
+    <div class="container">
+    <h2>Почему выбирают нас</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="images/printer.png" alt="Собственное оборудование">
+            <h3>Собственное оборудование</h3>
+        </div>
+        <div class="card">
+            <img src="images/clock.png" alt="Срок изготовления">
+            <h3>Срок изготовления от 1 дня</h3>
+        </div>
+        <div class="card">
+            <img src="images/delivery.png" alt="Доставка по городу">
+            <h3>Доставка по городу</h3>
+        </div>
+        <div class="card">
+            <img src="images/design.png" alt="Индивидуальный дизайн">
+            <h3>Индивидуальный дизайн</h3>
+        </div>
+        <div class="card">
+            <img src="images/quality.png" alt="Гарантия качества">
+            <h3>Гарантия качества</h3>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- ===== ФОРМА / КОНТАКТЫ ===== -->
+<section id="contacts">
+    <div class="container">
+    <h2>Свяжитесь с нами</h2>
+    <p>Оставьте заявку и мы рассчитаем стоимость вашего тиража</p>
+
+    <form action="thanks.html" method="get">
+        <label>
+            Имя:<br>
+            <input type="text" name="name" required>
+        </label>
+        <br><br>
+
+        <label>
+            Телефон:<br>
+            <input type="tel" name="phone" required>
+        </label>
+        <br><br>
+
+        <button type="submit">Отправить заявку</button>
+    </form>
+    </div>
+</section>
+
+<!-- ===== ПОДВАЛ ===== -->
+<footer>
+    <p>© 2026 Типография Матрица</p>
+    <p>Телефон: +7 (900) 000-00-00</p>
+    <p>Email: info@matrix.ru</p>
+</footer>
 
 </body>
 </html>
